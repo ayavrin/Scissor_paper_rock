@@ -43,10 +43,12 @@ body{
     font-family: "Roboto Condensed", sans-serif;
 
 }
+/* for player */
 .playerY{
     grid-area: playerY;
     background-color: blanchedalmond;
 }
+/* for computer */
 .playerY > h4{
     margin: auto;
     text-align: center;
