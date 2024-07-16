@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: cadetblue;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    width: 30vw;
+    display: grid;
+    grid-template-areas: 
+    'result result'
+    'playerX playerY'
+    'show_icon show_icon';
+    gap: 20px;
+}
+.grid div{
+    border-radius: 10px;
+    height: 120px;
+    
+}
+.result{
+    grid-area: result;
+    background-color: rgb(199, 178, 151);
+}
+.playerX{
+    grid-area: playerX;
+    background-color:burlywood;
+}
+.playerX > h4{
+    color: grey;
+    text-align: center;
+    margin: auto;
+    width: 100px;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+.playerY{
+    grid-area: playerY;
+    background-color: blanchedalmond;
+}
+.playerY > h4{
+    margin: auto;
+    text-align: center;
+    width: 100px;
+    color:rgb(114, 130, 86);
+    font-family: "Roboto Condensed", sans-serif;
+
+    
+}
+.icon{
+    grid-area: show_icon;
+    background-color: rgb(120, 77, 61);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+img{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+img.iconJS{
+    display: block;
+    margin: auto; 
+    margin-top: 10px;
+}
+h5{
+    color: rgb(132, 109, 109);
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+img.icon:hover{
+    cursor: pointer;
+}
